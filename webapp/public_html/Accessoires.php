@@ -2,7 +2,7 @@
 <section class="container groeneLijnRest">
     <div class="col-md-6 col-md-push-3" >
         <article class="divGrijsInfo">
-            <h3>Home</h3>
+            <h3>Accessoires</h3>
             <div class="articleInner">
                 <center><p>Dit is een test.</p></center>
 				<center><p>Thomas zijn laptop is kut.</p></center>

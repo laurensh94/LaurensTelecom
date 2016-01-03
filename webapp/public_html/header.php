@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TZT Public Blended Shipping - JNF01</title>
-        <meta name="description" content="TZT PBS - JNF01" />
+        <title>Laurens Telecom</title>
+        <meta name="description" content="Laurens Telecom" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
@@ -33,8 +33,8 @@
                             <ul class="nav navbar-nav">
                                 <li><a href="index.php">Home</a></li>
                                 <li><a href="telefoons.php">Telefoons</a></li>
-                                <li><a href="info.php">Tablets</a></li>
-                                <li><a href="info.php">Accessoires</a></li>
+                                <li><a href="Tablets.php">Tablets</a></li>
+                                <li><a href="Accessoires.php">Accessoires</a></li>
                                 <li><a href="contact.php">Contact</a></li>
                             </ul>
                         </div>

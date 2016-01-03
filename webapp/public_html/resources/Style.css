@@ -5,7 +5,7 @@
 header nav .headerInner{
     padding-top: 20px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #FF6600;
+    border-bottom: 2px solid #97D700;
 }
 header nav .headerInner .navbar-header a img#Logo{
     height: 60px;
@@ -46,11 +46,11 @@ header nav .headerInner #navbar{
     background: none;
     font-weight: bold;
     font-size: 16px;
-    border: 1px solid #FF6600;
+    border: 1px solid #97D700;
     border-radius: 8px;
 }
 #navbar ul li.active a{
-    color: #FF6600;
+    color: #97D700;
     background: none;
     font-weight: bold;
     font-size: 16px;
@@ -61,7 +61,7 @@ header nav .headerInner #navbar{
     background: none;
     font-weight: bold;
     font-size: 16px;
-    border: 1px solid #FF6600;
+    border: 1px solid #97D700;
     border-radius: 8px;
     box-shadow: inset 1px 1px 5px 0 #ccc;
 }
@@ -71,7 +71,7 @@ header nav .headerInner #navbar{
 }
 
 section{
-    border-bottom: 2px solid #FF6600;
+    border-bottom: 2px solid #97D700;
     padding-bottom: 20px;
 }
 section div article{
@@ -95,13 +95,13 @@ section div article{
 
 h3 {
     text-align: center;
-    color: #FF6600;
+    color: #97D700;
     margin:0;
     margin-bottom: 15px;
 }
 
 h4{
-    color: #FF6600;
+    color: #97D700;
 }
 
 #formRoute{
@@ -141,7 +141,7 @@ h4{
 
 #Comment{
     text-align: center;
-    color: #FF6600;
+    color: #97D700;
 }
 
 #map-canvas {
@@ -149,13 +149,13 @@ h4{
     height: 300px;
 }
 
-.oranjeLijnRest {
-    border-bottom: 2px solid #FF6600;
+.groeneLijnRest {
+    border-bottom: 2px solid #97D700;
     padding-bottom: 50px
 }
 
-.oranjeKleur {
-    color: #FF6600;
+.groeneKleur {
+    color: #97D700;
 }
 
 .blauwKleur {
@@ -167,24 +167,9 @@ h4{
     padding-top: 2%;
 }
 
-.knopAanmeldenPakket {
-    margin-top: 3%; 
-    color: white; 
-    background-color: #FF6600;
-}
-
-.paddingFormVolgPakket {
-    padding: 15px;
-}
-
-.marginVolgPakket {
-    margin-left: 60px; 
-    margin-right: 60px;
-}
-
 .knopIndex {
     color: white; 
-    background-color: #FF6600;
+    background-color: #97D700;
 }
 
 .divGrijsRest {
@@ -197,37 +182,12 @@ h4{
 .checkSmartphone{
     float: left;
 }
-.koerierSmartphone {
-    color: #001A73; 
-    margin-left: 30px;
-}
 
 .divGrijsInfo {
     background: #DFDFDF; 
     border-radius: 8px;
     padding: 15px; 
     box-shadow: 0 1px 3px 0 black;
-}
-
-.oranjeLijnTrackTrace {
-    border-bottom: 2px solid #FF6600; 
-    margin-bottom: 30px; 
-    padding-bottom: 50px;
-}
-.blauwKleurTrackTrace {
-          color: #001A73;
-          font-weight: bold;
-          text-align: center;
-      }
-
-.minHeightTrackTrace {
-    min-height: 350px;
-}
-
-.innerdivTrackTrace {
-    background: white;
-    border-radius: 8px;
-    padding: 5% 15px 5% 15px;
 }
 
 .footer-distributed{
@@ -288,7 +248,7 @@ a img#Logo{
 }
 
 .footer-distributed .footer-center i{
-  background-color:  #FF6600;
+  background-color:  #97D700;
   color: white;
   font-size: 25px;
   width: 38px;
@@ -341,7 +301,7 @@ a img#Logo{
 
 .footer-distributed .footer-company-about span{
   display: block;
-  color: #FF6600;
+  color: #97D700;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -360,7 +320,7 @@ a img#Logo{
   border-radius: 2px;
 
   font-size: 20px;
-  color: #FF6600;
+  color: #97D700;
   text-align: center;
   line-height: 35px;
 
