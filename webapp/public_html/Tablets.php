@@ -5,7 +5,7 @@
             <h3>Tablets</h3>
             <div class="articleInner">
                 <center><p>Dit is een test.</p></center>
-				<center><p>Thomas zijn laptop is kut.</p></center>
+				<center><p>hier komen de tablets te staan.</p></center>
             </div>
         </article>
     </div>
