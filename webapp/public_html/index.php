@@ -4,8 +4,8 @@
         <article class="divGrijsInfo">
             <h3>Home</h3>
             <div class="articleInner">
-                <center><p>Dit is een test.</p></center>
-				<center><p>Hier komt de startpagina</p></center>
+                <center><p>Laurens Telecom</p></center>
+				<center><p>Welkom op de website van Laurens Telecom. Op deze website vind u een overzicht van alle telefoons, tablets en toebehoren die op dit moment op voorraad zijn.</p></center>
             </div>
         </article>
     </div>

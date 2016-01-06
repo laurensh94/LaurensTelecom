@@ -8,9 +8,9 @@
                     -
                     <a href="telefoons.php">Telefoons</a>
                     -
-                    <a href="Tablets.php">Tablets</a>
+                    <a href="tablets.php">Tablets</a>
                     -
-                    <a href="Accessoires.php">Accessoires</a>
+                    <a href="accessoires.php">Accessoires</a>
                     -
                     <a href="contact.php">Contact</a>
                 </p>

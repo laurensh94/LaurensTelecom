@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<? include("/Functions/Functions.php");?>
 <html>
     <head>
         <title>Laurens Telecom</title>
@@ -33,8 +34,8 @@
                             <ul class="nav navbar-nav">
                                 <li><a href="index.php">Home</a></li>
                                 <li><a href="telefoons.php">Telefoons</a></li>
-                                <li><a href="Tablets.php">Tablets</a></li>
-                                <li><a href="Accessoires.php">Accessoires</a></li>
+                                <li><a href="tablets.php">Tablets</a></li>
+                                <li><a href="accessoires.php">Accessoires</a></li>
                                 <li><a href="contact.php">Contact</a></li>
                             </ul>
                         </div>

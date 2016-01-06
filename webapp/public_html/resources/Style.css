@@ -83,15 +83,6 @@ section div article{
     box-shadow: 0 1px 3px 0 black;
 }
 
-.handleiding{
-    padding: 0 15px;
-    padding-bottom: 20px;
-}
-.handleidingInner{
-    background: white;
-    border-radius: 8px;
-    padding: 15px;
-}
 
 h3 {
     text-align: center;
@@ -104,22 +95,6 @@ h4{
     color: #97D700;
 }
 
-#formRoute{
-    text-align: center;
-}
-
-.tableRoute *{
-    text-align: center;
-}
-.tableRoute th{
-    width: 25%;
-}
-.tableRoute .tableData{
-    padding-top: 21px;
-}
-.tableRoute button{
-    margin: 10px 0;
-}
 
 .articleInner {
     background: white;
@@ -346,8 +321,9 @@ a img#Logo{
   .footer-distributed .footer-center i{
     margin-left: 0;
   }
-
 }
-      .achtergrondGrijs {
-          background-color: #DFDFDF;
-      }
+
+.achtergrondGrijs {
+  background-color: #DFDFDF;
+}
+
