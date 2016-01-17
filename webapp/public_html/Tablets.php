@@ -1,10 +1,4 @@
 <?php include("header.php"); 
-include("/Functions/Functions.php");
-$link = connect();
-if($link == false){
-    echo 0;
-    exit;
-}
 ?>
 <section class="container groeneLijnRest">
     <div class="col-md-6 col-md-push-3" >

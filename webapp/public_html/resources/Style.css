@@ -19,6 +19,14 @@ header nav .headerInner .navbar-header a img#Logo{
     border: none;
 }
 
+nav ul ul {
+  display: none;
+}
+
+  nav ul li:hover > ul {
+    display: block;
+  }
+
 header nav.navbar-default{
     border: none;
     background: none;

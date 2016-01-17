@@ -10,8 +10,6 @@
                     -
                     <a href="tablets.php">Tablets</a>
                     -
-                    <a href="accessoires.php">Accessoires</a>
-                    -
                     <a href="contact.php">Contact</a>
                 </p>
 
@@ -25,7 +23,7 @@
                 </div>
                 <div>
                     <i class="fa fa-phone"></i>
-                    <p>06 53 77 62 01</p>
+                    <p href="tel:+31653776201">06 53 77 62 01</p>
                 </div>
                 <div>
                     <i class="fa fa-envelope"></i>
