@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<? include("/Functions/Functions.php");?>
+<? include("functions/functions.php");?>
 <html>
     <head>
         <title>Laurens Telecom</title>

@@ -29,7 +29,7 @@
                 </div>
                 <div>
                     <i class="fa fa-envelope"></i>
-                    <p>info@laurenstelecom.nl</a></p>
+                    <p>info@laurenshekkink.nl</a></p>
                 </div>
             </div>
             <div class="footer-right">

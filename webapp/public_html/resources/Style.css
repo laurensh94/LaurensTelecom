@@ -327,3 +327,7 @@ a img#Logo{
   background-color: #DFDFDF;
 }
 
+.merklogo{
+      max-height: 80px;
+      max-width: 80px;
+}
