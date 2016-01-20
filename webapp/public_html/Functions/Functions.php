@@ -78,65 +78,6 @@ function bCrypt($pass, $cost)
     return crypt($pass, $salt);
 }
 
-////$Email', '$hash',
-
-//
-//function createuser($link) {
-//    // NewUser
-//    $Email = $_POST["Email"];
-//    $Wachtwoord = $_POST["Wwoord"];
-//    $WachtwoordRepeat = $_POST["Wwoord2"];
-//    $Naam = $_POST["Naam"];
-//    $bedrijf = $_POST["Bedrijfsnaam"];
-//    $Postcode = $_POST["Postcode"];
-//    $Straat = $_POST["Straat"];
-//    $Huisnummer = $_POST["Huisnr"];
-//    $Toevoeging = $_POST["Toevoeging"];
-//    $Stad = $_POST["Plaats"];
-//
-//
-//    $query = mysqli_query($link, "SELECT * FROM Login WHERE Email = $Email") or die(mysqli_error());
-//    if ($Wachtwoord != $WachtwoordRepeat) {
-//        return 'De opgegeven wachtwoorden komen niet overeen.';
-//    } elseif ($row = mysqli_fetch_array($query)) {
-//        return 'Dit e-mailadres is al geregistreerd!';
-//    } else {
-//
-//        $query = "INSERT INTO 'Adres' ('Straatnaam', 'Huisnummer', 'Toevoeging', 'Postcode', 'Woonplaats') VALUES ($Straat,$Huisnummer,$Toevoeging, $Postcode, $Stad)";
-//        $result = mysqli_query($link, $query);
-//        mysqli_free_result($result);
-//
-//        $query = "SELECT MAX(AdresID) FROM Adres WHERE Postcode = \"$Postcode\" AND Huisnummer = \"$Huisnr\" ";
-//        $result = mysqli_query($link, $query);
-//        mysqli_fetch_assoc($result);
-//        $row = mysqli_fetch_assoc($result);
-//        $adresID = $row['AdresID'];
-//
-//        $query = "INSERT INTO 'Persoon'('Naam', 'Bedrijfsnaam', 'AdresID') VALUES ($Naam, $bedrijf,$adresID)";
-//        mysqli_free_result($result);
-//        $result = mysqli_query($link, $query);
-//        mysqli_free_result($result);
-//
-//        $query = "SELECT MAX(PersoonID) FROM Persoon WHERE Naam = \"$Naam\"";
-//        $result = mysqli_query($link, $query);
-//        mysqli_fetch_assoc($result);
-//        $row = mysqli_fetch_assoc($result);
-//        $PersoonID = $row['PersoonID'];
-//
-//        $hash = bCrypt($Wachtwoord, 15);
-//        $query = "INSERT INTO 'Login'('Email', 'PersoonID', 'Wachtwoord', 'Rechten') VALUES ($Email,$PersoonID, $hash.0)";
-//        $result = mysqli_query($link, $query);
-//        mysqli_free_result($result);
-//        mysqli_close($link);
-//
-//        ?>
-<!--        <script>-->
-<!--            window.location.href = '../index.php?succes';-->
-<!--        </script>-->
-<!--        --><?php
-//    }
-//}
-
 function checkSession()
 {
     if ($_SESSION["Access"] == 0) {

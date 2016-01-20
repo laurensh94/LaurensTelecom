@@ -2,7 +2,7 @@
 
 $Naam = $_POST["Naam"];
 $Postcode = $_POST["Postcode"];
-$Huisnr = $_POST["Huisnummer"];
+$Huisnr = $_POST["Huisnr"];
 $Toevoeging = $_POST["Toevoeging"];
 $Plaats = $_POST["Woonplaats"];
 $Straat = $_POST["Straat"];
