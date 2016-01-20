@@ -1,4 +1,17 @@
-<? include("functions/functions.php");?>
+<?php session_start(); ini_set('display_errors', 1);  error_reporting(E_ALL);
+if(!isset($_SESSION["Access"])){
+    $_SESSION["Access"] = 0;
+}
+if(isset($_GET["Logout"])){
+    $Logout = $_GET["Logout"];
+    if($Logout == true){
+        $_SESSION["Access"] = 0;
+        session_destroy();
+    }
+}
+include("functions/functions.php");
+$link = connect();
+?>
 <html>
     <head>
         <title>Laurens Telecom</title>
@@ -15,7 +28,80 @@
         <script type="text/javascript" src="resources/Style.js"></script>
     </head>
     <body>
+        <div id="page">
             <header class="container-fluid">
+
+                    <header class="container-fluid">
+
+                        <?php
+                        if($_SESSION["Access"] == 0){?>
+                            <div id="Login">
+                                <form method="POST">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Gebruikersnaam" id="GebruikersnaamHeader" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" placeholder="Wachtwoord" id="WachtwoordHeader" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="button" class="btn btn-default btn-custom" onclick="Login()">Inloggen</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <label id="LoginLabel">Login</label>
+                        <?php }else{ ?>
+                            <div id="User">
+                                <form method="POST">
+                                    <div class="form-group">
+                                        <button type="button" class="btn btn-default btn-custom" onclick="Logout()">Uitloggen</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <label id="UserLabel"><?php echo $_SESSION["Gebruikersnaam"];?></label>
+                        <?php }?>
+
+                        <script type="text/javascript">
+                            function Login(){
+                                var Gebruikersnaam = $("#GebruikersnaamHeader").val();
+                                var Wachtwoord = $("#WachtwoordHeader").val();
+
+                                if(Gebruikersnaam.length > 0 && Wachtwoord.length > 0){
+                                    $("#GebruikersnaamHeader").css({border:"1px solid #ccc"});
+                                    $("#WachtwoordHeader").css({border:"1px solid #ccc"});
+
+                                    $.post( "/functions/Login.php", {
+                                        Gebruikersnaam: Gebruikersnaam,
+                                        Wachtwoord: Wachtwoord
+                                    }, function(data){
+                                        if(data.connectError !== 0){
+                                            if(data.Access === 1){
+                                                window.location.href = "index.php";
+                                            }else{
+                                                alert(data.Access);
+                                            }
+
+                                            $("#GebruikersnaamHeader").val("");
+                                            $("#WachtwoordHeader").val("");
+                                        }else{
+                                            $("#WachtwoordHeader").val("");
+                                            alert("Er kan geen verbinding gemaakt worden.");
+                                        }
+                                    }, "json");
+                                }else{
+                                    $("#GebruikersnaamHeader").css({border:"1px solid red"});
+                                    $("#WachtwoordHeader").css({border:"1px solid red"});
+                                }
+                            }
+
+                            function Logout(){
+                                var x = confirm("Weet je zeker dat je wilt uitloggen?");
+                                if(x === true){
+                                    window.location.href = "index.php?Logout=true";
+                                }
+                            }
+                        </script>
+
                  <nav class="navbar navbar-default">
                     <div class="container headerInner">
 
@@ -35,12 +121,10 @@
                                 <li><a href="telefoons.php">Telefoons</a></li>
                                 <li><a href="tablets.php">Tablets</a></li>
                                 <li><a href="contact.php">Contact</a></li>
+                                <li><a href="registreer.php">registreer</a></li>
                             </ul>
                         </div>
 
                     </div>
                 </nav>
-
             </header>
-    </body>
-</html>
